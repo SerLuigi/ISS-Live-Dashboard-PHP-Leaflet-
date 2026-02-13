@@ -34,7 +34,7 @@ function initMap(){
   }).addTo(map);
 
   const issIcon = L.icon({
-    iconUrl: "https://www.scada24.io/iss/assets/img/iss.png?v=1",
+    iconUrl: "https://www.yousite/iss/assets/img/iss.png?v=1",
     iconSize: [48, 48],
     iconAnchor: [24, 24],
     className: "iss-img-icon"
