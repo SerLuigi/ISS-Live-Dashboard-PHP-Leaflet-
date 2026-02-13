@@ -11,3 +11,14 @@ Here’s how it works in practice:
 * The dashed line shows the next ~10 minutes using API-based future positions, not a rough extrapolation.
 
 In short, you can upload this folder to any shared hosting that supports PHP, open `index.php`, and you immediately have a clean blue “mission-style” dashboard that keeps updating on its own: it tracks where the ISS is now, where it has been, and where it’s going next, together with the key telemetry values that explain what you’re looking at.
+
+## ISS icon (important)
+The ISS marker icon is loaded via an absolute URL. After downloading the project, update it to match your own domain/path in `assets/js/app.js`:
+
+```js
+const issIcon = L.icon({
+  iconUrl: "https://www.yoursite/iss/assets/img/iss.png?v=1",
+  iconSize: [48, 48],
+  iconAnchor: [24, 24],
+  className: "iss-img-icon"
+});
